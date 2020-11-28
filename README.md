@@ -1,2 +1,4 @@
 # e2e-test-spectacle
-End-to-end tests for Spectacle (Gauge plugin which generates HTML docs from Gauge specifications)
+End-to-end tests for [Spectacle](https://github.com/getgauge/spectacle).
+
+Spectacle is a [Gauge](https://gauge.org/) plugin which generates HTML docs from Gauge specifications.
