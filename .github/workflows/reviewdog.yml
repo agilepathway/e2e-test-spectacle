@@ -28,6 +28,17 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
 
+  eslint:
+    name: runner / eslint
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - name: eslint
+        uses: reviewdog/action-eslint@v1.11.3
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-check
+
   misspell:
     name: runner / misspell
     runs-on: ubuntu-20.04
