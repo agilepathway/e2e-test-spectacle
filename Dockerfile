@@ -4,11 +4,13 @@
 # 	docker run  --rm -it -v ${PWD}/reports:/gauge/reports gauge-taiko
 
 # This image uses the official node base image.
+# hadolint ignore=DL3006
 FROM node
  
 # The Taiko installation downloads and installs the chromium required to run the tests. 
 # However, we need the chromium dependencies installed in the environment. These days, most 
 # Dockerfiles just install chrome to get the dependencies.
+# hadolint ignore=DL3008,DL3009,DL3015,DL4006
 RUN apt-get update \
      && apt-get install -y wget gnupg ca-certificates \
      && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
@@ -44,6 +46,7 @@ RUN groupadd -r gauge && useradd -r -g gauge -G audio,video gauge && \
 USER gauge
 
 # Install dependencies and plugins
+# hadolint ignore=DL3016
 RUN npm install -g @getgauge/cli \
     && npm install \
     && gauge install \
