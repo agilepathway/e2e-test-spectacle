@@ -17,4 +17,4 @@ Dependabot will automatically update our npm dependencies, along with
 
 ## Ubuntu version in GitHub Actions
 
-[Ubuntu releases annually in April](https://wiki.ubuntu.com/Releases).  In 2020 the GitHub Actions team [supported the new version by mid June](https://github.com/actions/virtual-environments/issues/228#issuecomment-644065532), so we have [an issue automatically created on for 15th July each year](https://github.com/agilepathway/e2e-test-spectacle/pull/17) to prompt us to update. 
+[Ubuntu releases annually in April](https://wiki.ubuntu.com/Releases).  In 2020 the GitHub Actions team [supported the new version by mid June](https://github.com/actions/virtual-environments/issues/228#issuecomment-644065532), so we have [an issue automatically created on for 15th July each year](https://github.com/agilepathway/gauge-taiko-template/pull/17) to prompt us to update. 
