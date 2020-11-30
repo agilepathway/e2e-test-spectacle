@@ -23,3 +23,13 @@ updates:
       - "patch"
     reviewers:
       - "johnboyes"
+
+  - package-ecosystem: "docker"
+    directory: "/.devcontainer"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "patch"
+    reviewers:
+      - "johnboyes"
