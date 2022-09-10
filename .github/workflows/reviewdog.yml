@@ -7,7 +7,7 @@ jobs:
 
   hadolint:
     name: runner / hadolint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Check out code
         uses: actions/checkout@v2.3.4
@@ -19,18 +19,18 @@ jobs:
 
   yamllint:
     name: runner / yamllint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
       - name: yamllint
-        uses: reviewdog/action-yamllint@v1.2
+        uses: reviewdog/action-yamllint@v1.6.1
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
 
   eslint:
     name: runner / eslint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
       - name: eslint
@@ -41,17 +41,17 @@ jobs:
 
   misspell:
     name: runner / misspell
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
-      - uses: reviewdog/action-misspell@v1.7
+      - uses: reviewdog/action-misspell@v1.12.2
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
 
   languagetool:
     name: runner / languagetool
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.3.4
       - uses: reviewdog/action-languagetool@v1.5
