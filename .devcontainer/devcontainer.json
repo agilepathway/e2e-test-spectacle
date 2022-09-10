@@ -2,8 +2,8 @@
 	"name": "Node.js",
 	"build": {
 		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 10, 12, 14
-		"args": { "VARIANT": "14" }
+		// Update 'VARIANT' to pick a Node version: 18 / 18-bullseye, 16 / 16-bullseye, 14 / 14-bullseye, 18-buster, 16-buster, 14-buster
+		"args": { "VARIANT": "18" }
 	},
 
 	"runArgs": ["--security-opt", "seccomp=unconfined" ],

@@ -1,6 +1,6 @@
 # [Choice] Node.js version: 14, 12, 10
-ARG VARIANT=14
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
+ARG VARIANT=18
+FROM mcr.microsoft.com/devcontainers/javascript-node:${VARIANT}
 
 # [Optional] Uncomment this section to install additional OS packages.
 ARG CHROMIUM_VERSION="105.0.5195.102-1~deb11u1"
