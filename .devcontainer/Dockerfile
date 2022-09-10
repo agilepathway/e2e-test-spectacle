@@ -3,7 +3,7 @@ ARG VARIANT=14
 FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
 
 # [Optional] Uncomment this section to install additional OS packages.
-ARG CHROMIUM_VERSION="90.0.4430.212-1~deb10u1"
+ARG CHROMIUM_VERSION="105.0.5195.102-1~deb11u1"
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
    && apt-get -y install --no-install-recommends chromium="${CHROMIUM_VERSION}" \
 # Clean up
