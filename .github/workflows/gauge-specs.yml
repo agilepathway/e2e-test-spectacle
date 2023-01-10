@@ -27,7 +27,7 @@ jobs:
           gauge run
 
       - name: Upload logs
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: gauge-specs-logs
