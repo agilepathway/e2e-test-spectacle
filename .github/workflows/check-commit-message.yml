@@ -18,6 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check
-        uses: mristin/opinionated-commit-message@v3.0.0
+        uses: mristin/opinionated-commit-message@master
         with:
           allow-one-liners: 'true'
